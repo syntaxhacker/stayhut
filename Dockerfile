@@ -46,5 +46,6 @@ WORKDIR /home/app/deploy/
 COPY --from=sbuild /home/app/server/package*.json /home/app/deploy/
 COPY --from=combine /home/app/deploy/src /home/app/deploy/src
 RUN npm install --silent --only=prod
+EXPOSE 3000
 CMD ["node","src/index.js"]
 
