@@ -1,0 +1,33 @@
+.ant-alert-error {
+	@include whenDark {
+		background-color: #820014;
+		border-color: #5c0011;
+	}
+}
+.ant-alert-message {
+	@include whenDark {
+		color: $white-theme-color-1;
+	}
+}
+.ant-alert-with-description {
+	@include whenDark {
+		color: $white-theme-color-1;
+	}
+}
+.ant-notification-notice {
+	@include whenDark {
+		background: $black-trans;
+		.ant-notification-notice-message,
+		.ant-notification-notice-close {
+			color: $white-theme-color-1;
+		}
+	}
+}
+
+.error-banner {
+	position: fixed;
+	width: 100%;
+	top: 64px;
+	left: 0;
+	z-index: 99;
+}

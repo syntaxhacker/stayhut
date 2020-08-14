@@ -1,0 +1,55 @@
+@media (max-width: 48em) {
+	.menu {
+		padding: 0;
+	}
+	.listing-card__dimensions--guests {
+		float: right;
+		padding-bottom: 0;
+	}
+	.listings-pagination {
+		float: none;
+	}
+}
+@media (max-width: 75em) {
+	.listing-card__dimensions--guests {
+		float: none;
+		padding-bottom: 5px;
+	}
+	.home {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.listing-details__image {
+		height: 380px;
+	}
+	.listing {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.listings {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.user {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+@media (max-width: 36em) {
+	.home__listings-img-cover {
+		padding: 10px 0;
+	}
+	.app__affix-footer {
+		display: none;
+	}
+}
+@media (max-width: 62em) {
+	.host-content {
+		padding-left: 20px;
+		padding-right: 20px;
+		margin: 0 0;
+	}
+	.listing-booking {
+		padding-top: 40px;
+	}
+}

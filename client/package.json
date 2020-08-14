@@ -1,0 +1,63 @@
+{
+	"name": "stayhutclient",
+	"version": "0.1.0",
+	"private": true,
+	"author": "Rohit J <jrohit072@gmail.com>",
+	"engines": {
+		"node": ">=10"
+	},
+	"dependencies": {
+		"@ant-design/icons": "^4.2.1",
+		"@stripe/react-stripe-js": "^1.1.2",
+		"@stripe/stripe-js": "^1.8.0",
+		"@testing-library/jest-dom": "^4.2.4",
+		"@testing-library/react": "^9.3.2",
+		"@testing-library/user-event": "^7.1.2",
+		"@types/graphql": "^14.5.0",
+		"@types/jest": "^24.0.0",
+		"@types/node": "^12.0.0",
+		"@types/react-router-dom": "^5.1.5",
+		"antd": "^4.4.1",
+		"apollo-boost": "^0.4.9",
+		"graphql": "^15.3.0",
+		"moment": "^2.27.0",
+		"node-sass": "^4.14.1",
+		"react": "^16.13.1",
+		"react-apollo": "^3.1.5",
+		"react-dom": "^16.13.1",
+		"react-router-dom": "^5.2.0",
+		"react-scripts": "3.4.1",
+		"react-toggle": "^4.1.1",
+		"typescript": "~3.7.2"
+	},
+	"scripts": {
+		"start": "BROWSER=none react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"codegen:schema": "npx apollo client:download-schema --endpoint=http://localhost:9000/api",
+		"codegen:generate": "npx apollo client:codegen --localSchemaFile=schema.json --includes=src/**/*.ts --globalTypesFile=./src/lib/graphql/globalTypes.ts --target=typescript",
+		"codegen:combine": "npm run codegen:schema && npm run codegen:generate"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"proxy": "http://localhost:9000",
+	"devDependencies": {
+		"@types/react": "^16.9.41",
+		"@types/react-dom": "^16.9.8",
+		"@types/react-toggle": "^4.0.2"
+	}
+}

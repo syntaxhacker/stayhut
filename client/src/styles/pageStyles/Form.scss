@@ -1,0 +1,53 @@
+.ant-form-vertical {
+	width: 480px;
+	@include whenDark {
+		* {
+			border: none;
+		}
+		.ant-radio-button-wrapper:not(:first-child)::before {
+			background-color: $black-trans;
+		}
+		.ant-radio-button-wrapper,
+		.ant-form-item .ant-upload,
+		.ant-input-number-input-wrap,
+		input,
+		textarea {
+			background-color: $listings-card-bg;
+			color: $white-theme-color-2;
+		}
+		.ant-input-number-input::placeholder,
+		textarea::placeholder,
+		.ant-input::placeholder {
+			opacity: (0.3);
+		}
+		.ant-form-item-extra {
+			color: $white-theme-color-2;
+		}
+		.ant-input-number-handler-wrap {
+			background: #00080f;
+		}
+	}
+}
+
+.ant-form-item-label > label {
+	@include whenDark {
+		color: $white-theme-color-2;
+	}
+}
+.host__form-header {
+	padding-bottom: 20px;
+	span {
+		@include whenDark {
+			color: $white-theme-color-3;
+		}
+	}
+}
+.host__form-title.ant-typography {
+	color: var(--foregroundPrimary-1);
+	margin-bottom: 5px;
+}
+.host__form-image-upload {
+	img {
+		width: 125px;
+	}
+}

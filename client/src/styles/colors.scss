@@ -1,0 +1,33 @@
+$darker-blue: #1d226c;
+$darker-blue-2: #011324;
+$white-brown-blend: #bfbfbf;
+$white-theme-color-1: #fff;
+$white-theme-color-2: #f0f1f2;
+$white-theme-color-3: #c9d7f8;
+$listings-card-bg: #000c17;
+$font_family_1: Sacramento, cursive;
+$rich-black-fogra: #000c17cc;
+$Gainsboro: #d9d9d9;
+$white-trans: #bfbfbf59;
+$black-trans: #00000057;
+body {
+	--foregroundPrimary-1: #{$darker-blue};
+	--foregroundPrimary-2: #{$white-theme-color-2};
+	// --foregroundPrimary-3: #{$white-theme-color-3};
+	--backgroundPrimary: #{$white-theme-color-1};
+	--heroCardCover: #1d226c;
+	--google-bg: #4285f4;
+	--google-bg-active: #3367d6;
+	--skeleton-card: #{$Gainsboro};
+	@include whenDark {
+		--foregroundPrimary-1: #{$white-theme-color-1};
+		--foregroundPrimary-2: #111;
+		--foregroundPrimary-3: #{$white-theme-color-3};
+		// --backgroundPrimary: #000018;
+		--backgroundPrimary: #{$darker-blue-2};
+		--heroCardCover: #0a0a0e;
+		--google-bg: #2d24aa;
+		--google-bg-active: #443cac;
+		--skeleton-card: #{$rich-black-fogra};
+	}
+}

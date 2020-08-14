@@ -1,0 +1,36 @@
+.DS_Store
+LICENSE
+readme.md
+
+# App
+test
+
+# Docker
+docker-compose.yml
+docker
+Dockerfile
+DockerCerts
+.dockerignore
+
+# Git
+.git
+.gitkeep
+.gitignore
+
+# NodeJS
+node_modules
+
+# Runtime Data
+pids
+*.pid
+*.seed
+
+# node-waf configuration
+.lock-wscript
+.git
+.idea
+*/**/node_modules
+.data
+client/node_modules
+server/node_modules
+server/.env

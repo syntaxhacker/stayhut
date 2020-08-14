@@ -1,0 +1,44 @@
+.ant-picker-panel {
+	@include whenDark {
+		background: $listings-card-bg;
+		.ant-picker-cell-disabled::before {
+			background: $black-trans;
+		}
+		.ant-picker-header {
+			border-bottom-color: $darker-blue-2;
+			button {
+				color: $white-trans;
+			}
+		}
+
+		border-bottom-color: $darker-blue-2;
+		.ant-picker-cell-inner {
+			color: $white-theme-color-1;
+		}
+		.ant-picker-cell-disabled .ant-picker-cell-inner,
+		.ant-picker-header button {
+			color: $white-trans;
+		}
+
+		.ant-picker-header-view button,
+		.ant-picker-content th {
+			color: $white-theme-color-1;
+		}
+		.ant-picker-header-next-btn :hover,
+		.ant-picker-header-super-next-btn :hover {
+			color: $white-theme-color-1;
+		}
+		.ant-picker-cell-in-view:hover {
+			background: none;
+		}
+		.ant-picker-cell-inner:hover {
+			background: $darker-blue-2 !important;
+		}
+		.ant-picker-cell:hover:not(.ant-picker-cell-in-view)
+			.ant-picker-cell-inner,
+		.ant-picker-cell:hover:not(.ant-picker-cell-selected):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end):not(.ant-picker-cell-range-hover-start):not(.ant-picker-cell-range-hover-end)
+			.ant-picker-cell-inner {
+			background: none;
+		}
+	}
+}

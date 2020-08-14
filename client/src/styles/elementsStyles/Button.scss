@@ -1,0 +1,12 @@
+.ant-btn-primary[disabled],
+.ant-btn-primary[disabled]:hover {
+	@include whenDark {
+		color: rgba(255, 255, 255, 0.25);
+		background: #011324;
+	}
+}
+.ant-btn {
+	@include whenDark {
+		border-color: $black-trans;
+	}
+}
