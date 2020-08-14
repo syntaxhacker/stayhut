@@ -1,7 +1,7 @@
 name: Build and Publish latest image
 on:
     push:
-        branches: [master]
+        branches: [master, dev]
 
 jobs:
     build-and-publish:

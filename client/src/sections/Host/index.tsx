@@ -180,7 +180,7 @@ const Host = ({ viewer }: Props) => {
 						},
 					]}
 				>
-					<InputNumber min={1} placeholder="4" />
+					<InputNumber min={1} max={10} placeholder="4" />
 				</FormItem>
 
 				<FormItem
@@ -277,7 +277,11 @@ const Host = ({ viewer }: Props) => {
 					name="price"
 					rules={[{ required: true, message: "enter valid price" }]}
 				>
-					<InputNumber min={0} formatter={(value) => `₹${value}`} />
+					<InputNumber
+						min={0}
+						max={9999}
+						formatter={(value) => `₹${value}`}
+					/>
 				</FormItem>
 
 				<FormItem>
