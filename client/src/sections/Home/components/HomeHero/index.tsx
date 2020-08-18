@@ -2,11 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Card, Col, Input, Row, Typography } from "antd";
 
-import hiroshimaTemple from "../../assets/hiroshima-temple.jpg";
-import pinkPalace from "../../assets/jaipur-pink-palace.png";
-import norwayImage from "../../assets/norway.jpg";
-import londonImage from "../../assets/london.jpg";
-
 const { Title } = Typography;
 const { Search } = Input;
 
@@ -32,28 +27,56 @@ export const HomeHero = ({ onSearch }: Props) => {
 			<Row gutter={12} className="home-hero__cards">
 				<Col xs={12} md={6}>
 					<Link to="/listings/Japan">
-						<Card cover={<img alt="Japan" src={hiroshimaTemple} />}>
+						<Card
+							cover={
+								<img
+									alt="Japan"
+									src="https://res.cloudinary.com/dghaikhyj/image/upload/v1597771591/SH_ASSETS/hiroshima-temple.jpg"
+								/>
+							}
+						>
 							Japan
 						</Card>
 					</Link>
 				</Col>
 				<Col xs={12} md={6}>
 					<Link to="/listings/India">
-						<Card cover={<img alt="India" src={pinkPalace} />}>
+						<Card
+							cover={
+								<img
+									alt="India"
+									src="https://res.cloudinary.com/dghaikhyj/image/upload/v1597771609/SH_ASSETS/jaipur-pink-palace.png"
+								/>
+							}
+						>
 							India
 						</Card>
 					</Link>
 				</Col>
 				<Col xs={0} md={6}>
 					<Link to="/listings/norway">
-						<Card cover={<img alt="Norway" src={norwayImage} />}>
+						<Card
+							cover={
+								<img
+									alt="Norway"
+									src="https://res.cloudinary.com/dghaikhyj/image/upload/v1597771597/SH_ASSETS/norway.jpg"
+								/>
+							}
+						>
 							Norway
 						</Card>
 					</Link>
 				</Col>
 				<Col xs={0} md={6}>
 					<Link to="/listings/london">
-						<Card cover={<img alt="London" src={londonImage} />}>
+						<Card
+							cover={
+								<img
+									alt="London"
+									src="https://res.cloudinary.com/dghaikhyj/image/upload/v1597771596/SH_ASSETS/london.jpg"
+								/>
+							}
+						>
 							London
 						</Card>
 					</Link>
