@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Layout } from "antd";
-import headerLogo from "./assets/sh.png";
 import { Link, withRouter, RouteComponentProps } from "react-router-dom";
 import { MenuItems } from "./components";
 import { Viewer } from "../../lib/graphql/types";
@@ -57,7 +56,10 @@ const AppHeader = withRouter(
 				<div className="app-header__logo-search-section">
 					<div className="app-header__logo">
 						<Link to="/">
-							<img src={headerLogo} alt="App Logo" />
+							<img
+								src="https://res.cloudinary.com/dghaikhyj/image/upload/w_100,h_32,c_fit/v1596866338/SH_ASSETS/bjwwjxfhk2m4wmjaelgj.png"
+								alt="App Logo"
+							/>
 						</Link>
 					</div>
 					<div className="app-header__search-input">

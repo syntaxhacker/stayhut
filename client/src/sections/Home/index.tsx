@@ -4,9 +4,6 @@ import { HomeHero } from "./components/HomeHero";
 import { RouteComponentProps, Link } from "react-router-dom";
 import { displayErrorNotification } from "../../lib/utils";
 
-import mapBackground from "./assets/map-background.jpg";
-import hawaiiIslandsImage from "./assets/hawaii-islands.jpg";
-import romeColosseumImage from "./assets/rome-Colosseum.jpg";
 import { useQuery } from "react-apollo";
 import { LISTINGS } from "../../lib/graphql/queries/Listings";
 import { ListingsFilters } from "../../lib/graphql/globalTypes";
@@ -55,7 +52,9 @@ const Home = ({ history }: RouteComponentProps) => {
 	return (
 		<Content
 			className="home"
-			style={{ backgroundImage: `url(${mapBackground})` }}
+			style={{
+				backgroundImage: `url("https://res.cloudinary.com/dghaikhyj/image/upload/v1597771605/SH_ASSETS/map-background.png")`,
+			}}
 		>
 			<HomeHero onSearch={onSearch} />
 
@@ -86,7 +85,7 @@ const Home = ({ history }: RouteComponentProps) => {
 						<Link to="/listings/hawaii">
 							<div className="home__listings-img-cover">
 								<img
-									src={hawaiiIslandsImage}
+									src="https://res.cloudinary.com/dghaikhyj/image/upload/v1597771593/SH_ASSETS/hawaii-islands.jpg"
 									alt="hawaii"
 									className="home__listings-img"
 								/>
@@ -97,7 +96,7 @@ const Home = ({ history }: RouteComponentProps) => {
 						<Link to="/listings/italy">
 							<div className="home__listings-img-cover">
 								<img
-									src={romeColosseumImage}
+									src="https://res.cloudinary.com/dghaikhyj/image/upload/v1597771600/SH_ASSETS/rome-Colosseum.jpg"
 									alt="italy"
 									className="home__listings-img"
 								/>

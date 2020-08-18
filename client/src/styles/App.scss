@@ -7,9 +7,9 @@
 }
 .ant-tag-magenta {
 	@include whenDark {
-		color: $white-theme-color-1;
-		background-color: $listings-card-bg;
-		border-color: $white-trans;
+		color: $white-1;
+		background-color: $dark-blue-3;
+		border-color: $white-transparent;
 	}
 }
 .app-header {
@@ -18,7 +18,7 @@
 	padding: 0;
 	@include whenDark {
 		box-shadow: 0 2px 8px #0b0b0b;
-		background: darken($white-theme-color-1, 10%);
+		background: darken($white-1, 10%);
 	}
 	.app-header__menu-section {
 		float: right;
@@ -55,8 +55,8 @@
 
 .ant-input-group .ant-input {
 	@include whenDark {
-		background-color: $listings-card-bg;
-		color: $white-theme-color-1;
+		background-color: $dark-blue-3;
+		color: $white-1;
 	}
 }
 
@@ -69,16 +69,16 @@
 .ant-menu-item[role="menuitem"] {
 	@include whenDark {
 		a {
-			color: $white-theme-color-1;
+			color: $white-1;
 		}
 	}
 }
 .ant-menu-submenu {
 	.ant-menu-vertical {
 		@include whenDark {
-			background-color: $listings-card-bg;
+			background-color: $dark-blue-3;
 			* {
-				color: $white-theme-color-1;
+				color: $white-1;
 			}
 		}
 	}
@@ -199,7 +199,7 @@
 .listing-card-info {
 	.ant-card-body {
 		@include whenDark {
-			background-color: $listings-card-bg;
+			background-color: $dark-blue-3;
 		}
 	}
 	@include whenDark {
@@ -212,12 +212,12 @@
 }
 .log-in-card {
 	@include whenDark {
-		background: $listings-card-bg;
+		background: $dark-blue-3;
 		.ant-card-body {
-			background: $listings-card-bg;
+			background: $dark-blue-3;
 		}
 		.ant-typography {
-			color: $white-theme-color-3;
+			color: $white-3;
 		}
 	}
 }
@@ -252,7 +252,7 @@
 		padding-bottom: 0;
 		height: 0;
 		// color: var(--backgroundPrimary);
-		color: $white-theme-color-1;
+		color: $white-1;
 		font-weight: 700;
 		position: relative;
 		bottom: 40px;
@@ -326,15 +326,15 @@
 			border: none;
 		}
 		.ant-radio-button-wrapper:not(:first-child)::before {
-			background-color: $black-trans;
+			background-color: $black-transparent;
 		}
 		.ant-radio-button-wrapper,
 		.ant-form-item .ant-upload,
 		.ant-input-number-input-wrap,
 		input,
 		textarea {
-			background-color: $listings-card-bg;
-			color: $white-theme-color-2;
+			background-color: $dark-blue-3;
+			color: $white-2;
 		}
 		.ant-input-number-input::placeholder,
 		textarea::placeholder,
@@ -342,7 +342,7 @@
 			opacity: (0.3);
 		}
 		.ant-form-item-extra {
-			color: $white-theme-color-2;
+			color: $white-2;
 		}
 		.ant-input-number-handler-wrap {
 			background: #00080f;
@@ -352,7 +352,7 @@
 		padding-bottom: 20px;
 		span {
 			@include whenDark {
-				color: $white-theme-color-3;
+				color: $white-3;
 			}
 		}
 		.host__form-title.ant-typography {
@@ -376,39 +376,39 @@
 
 .ant-picker-panel {
 	@include whenDark {
-		background: $listings-card-bg;
+		background: $dark-blue-3;
 		.ant-picker-cell-disabled::before {
-			background: $black-trans;
+			background: $black-transparent;
 		}
 		.ant-picker-header {
-			border-bottom-color: $darker-blue-2;
+			border-bottom-color: $dark-blue-2;
 			button {
-				color: $white-trans;
+				color: $white-transparent;
 			}
 		}
 
-		border-bottom-color: $darker-blue-2;
+		border-bottom-color: $dark-blue-2;
 		.ant-picker-cell-inner {
-			color: $white-theme-color-1;
+			color: $white-1;
 		}
 		.ant-picker-cell-disabled .ant-picker-cell-inner,
 		.ant-picker-header button {
-			color: $white-trans;
+			color: $white-transparent;
 		}
 
 		.ant-picker-header-view button,
 		.ant-picker-content th {
-			color: $white-theme-color-1;
+			color: $white-1;
 		}
 		.ant-picker-header-next-btn :hover,
 		.ant-picker-header-super-next-btn :hover {
-			color: $white-theme-color-1;
+			color: $white-1;
 		}
 		.ant-picker-cell-in-view:hover {
 			background: none;
 		}
 		.ant-picker-cell-inner:hover {
-			background: $darker-blue-2 !important;
+			background: $dark-blue-2 !important;
 		}
 		.ant-picker-cell:hover:not(.ant-picker-cell-in-view)
 			.ant-picker-cell-inner,
@@ -446,9 +446,9 @@
 	}
 	.listing-bookings__label {
 		@include whenDark {
-			color: $white-theme-color-2;
+			color: $white-2;
 			.ant-typography {
-				color: $white-theme-color-1;
+				color: $white-1;
 			}
 		}
 	}
@@ -473,7 +473,7 @@
 .listing-booking__card {
 	@include whenDark {
 		.ant-card-body {
-			background-color: $listings-card-bg;
+			background-color: $dark-blue-3;
 		}
 	}
 	width: 100%;
@@ -483,12 +483,12 @@
 	padding-bottom: 20px;
 	.ant-typography {
 		@include whenDark {
-			color: $white-theme-color-2;
+			color: $white-2;
 		}
 	}
 	.ant-picker {
 		@include whenDark {
-			background-color: $darker-blue-2;
+			background-color: $dark-blue-2;
 		}
 	}
 }
@@ -496,16 +496,16 @@
 .ant-picker-input {
 	@include whenDark {
 		input {
-			color: $white-theme-color-3;
+			color: $white-3;
 		}
 		.ant-picker-suffix {
-			color: $white-theme-color-3;
+			color: $white-3;
 		}
 		.ant-picker-clear {
 			background: none;
 		}
 		.ant-picker-clear:hover {
-			background: $black-trans;
+			background: $black-transparent;
 			color: white;
 		}
 	}
@@ -513,7 +513,7 @@
 
 .ant-modal-content {
 	@include whenDark {
-		background-color: $darker-blue-2;
+		background-color: $dark-blue-2;
 	}
 }
 .listing-booking__card-cta {
@@ -529,10 +529,10 @@
 }
 .ant-notification-notice {
 	@include whenDark {
-		background: $black-trans;
+		background: $black-transparent;
 		.ant-notification-notice-message,
 		.ant-notification-notice-close {
-			color: $white-theme-color-1;
+			color: $white-1;
 		}
 	}
 }
@@ -544,12 +544,12 @@
 }
 .ant-alert-message {
 	@include whenDark {
-		color: $white-theme-color-1;
+		color: $white-1;
 	}
 }
 .ant-alert-with-description {
 	@include whenDark {
-		color: $white-theme-color-1;
+		color: $white-1;
 	}
 }
 .ant-calendar-footer-text {
@@ -565,13 +565,13 @@
 .listing-booking-modal__intro {
 	@include whenDark {
 		.ant-typography {
-			color: $white-theme-color-1;
+			color: $white-1;
 		}
 	}
 }
 .ant-btn {
 	@include whenDark {
-		border-color: $black-trans;
+		border-color: $black-transparent;
 	}
 }
 
@@ -585,7 +585,7 @@
 	text-align-last: center;
 	@include whenDark {
 		.ant-typography {
-			color: $white-theme-color-1;
+			color: $white-1;
 		}
 	}
 }
@@ -640,7 +640,7 @@
 .listing-details__city-address.ant-typography {
 	margin: 5px 0;
 	@include whenDark {
-		color: $white-theme-color-3;
+		color: $white-3;
 	}
 }
 .listing-details__ratings.ant-typography {
@@ -648,13 +648,13 @@
 	font-size: 13px;
 }
 .listing-details__host-name {
-	font-family: $font_family_1;
+	font-family: $font_family-1;
 	display: inline-block;
 	padding-left: 10px;
 	position: relative;
 	top: 5px;
 	@include whenDark {
-		color: $white-theme-color-1;
+		color: $white-1;
 	}
 }
 .listing-details__section {
@@ -692,7 +692,7 @@
 
 .ant-form-item-label > label {
 	@include whenDark {
-		color: $white-theme-color-2;
+		color: $white-2;
 	}
 }
 .listings-filters {
@@ -701,10 +701,10 @@
 	background-color: var(--backgroundPrimary);
 	@include whenDark {
 		span {
-			color: $white-theme-color-2;
+			color: $white-2;
 		}
 		.ant-select-selector {
-			background-color: $rich-black-fogra;
+			background-color: $dark-blue-4;
 		}
 	}
 
@@ -727,7 +727,7 @@
 
 .ant-card-body {
 	@include whenDark {
-		background-color: $darker-blue-2;
+		background-color: $dark-blue-2;
 	}
 }
 .listings-skeleton__card-cover-img {
@@ -743,7 +743,7 @@
 		h3,
 		li {
 			@include whenDark {
-				background: $rich-black-fogra !important;
+				background: $dark-blue-4 !important;
 			}
 		}
 	}
@@ -763,13 +763,13 @@
 	@include whenDark {
 		button,
 		a {
-			color: $white-theme-color-2;
+			color: $white-2;
 			background: #000c17b3;
-			border-color: $listings-card-bg;
+			border-color: $dark-blue-3;
 		}
 	}
 	.ant-pagination-item {
-		border-color: $rich-black-fogra;
+		border-color: $dark-blue-4;
 		&:hover {
 			border-color: lighten($color: #fff, $amount: 70%);
 		}
@@ -821,7 +821,7 @@
 		background: var(--google-bg-active);
 	}
 	@include whenDark {
-		color: $white-theme-color-1;
+		color: $white-1;
 	}
 }
 .log-in-card__google-button-logo {
@@ -879,7 +879,7 @@
 }
 .ant-list-empty-text {
 	@include whenDark {
-		color: $white-theme-color-1;
+		color: $white-1;
 	}
 }
 .user-bookings__booking-history {
@@ -890,7 +890,7 @@
 	}
 	@include whenDark {
 		* {
-			color: $white-theme-color-1;
+			color: $white-1;
 		}
 	}
 }
@@ -920,7 +920,7 @@
 	width: 100%;
 	@include whenDark {
 		.ant-card-body {
-			background-color: $listings-card-bg;
+			background-color: $dark-blue-3;
 		}
 		box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
 	}
@@ -938,7 +938,7 @@
 
 	@include whenDark {
 		.ant-typography {
-			color: $white-theme-color-2;
+			color: $white-2;
 		}
 	}
 }

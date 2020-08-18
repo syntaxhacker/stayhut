@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Card, Typography, Layout, Spin } from "antd";
 
-import googleLogo from "./assets/google_logo.jpg";
 import { Viewer } from "../../lib/graphql/types";
 import { useApolloClient, useMutation } from "react-apollo";
 import { AuthUrl as AuthUrlData } from "../../lib/graphql/queries/AuthUrl/__generated__/AuthUrl";
@@ -101,7 +100,7 @@ const Login = ({ setViewer }: Props) => {
 						Log into StayHut
 					</Title>
 					<Text>
-						Sign in with google to start booking avaiable rentals!!
+						Sign in with google to start booking available rentals!!
 					</Text>
 				</div>
 				<button
@@ -109,12 +108,12 @@ const Login = ({ setViewer }: Props) => {
 					onClick={handleAuth}
 				>
 					<img
-						src={googleLogo}
+						src="https://res.cloudinary.com/dghaikhyj/image/upload/v1597772766/SH_ASSETS/google_logo.png"
 						alt="google logo"
 						className="log-in-card__google-button-logo"
 					/>
 					<span className="log-in-card__google-button-text">
-						sign in with google
+						Sign In With Google
 					</span>
 				</button>
 			</Card>
