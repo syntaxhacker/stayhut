@@ -17,7 +17,7 @@ export const HomeHero = ({ onSearch }: Props) => {
 					Find a home away from home
 				</Title>
 				<Search
-					placeholder="Search 'New York'"
+					placeholder="Search 'India'"
 					size="large"
 					enterButton
 					className="home-hero__search-input"

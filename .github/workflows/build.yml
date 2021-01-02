@@ -25,9 +25,9 @@ jobs:
                   repository: syntaxhacker/stayhut/stayhut
                   tag_with_ref: true
                   tag_with_sha: true
-            - uses: akhileshns/heroku-deploy@v3.4.6 # This is the action
-              with:
-                  heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-                  heroku_app_name: "stayhut" #Must be unique in Heroku
-                  heroku_email: "jrohit072@gmail.com"
-                  usedocker: true
+            # - uses: akhileshns/heroku-deploy@v3.4.6 # This is the action
+            #   with:
+            #       heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+            #       heroku_app_name: "stayhut" #Must be unique in Heroku
+            #       heroku_email: "jrohit072@gmail.com"
+            #       usedocker: true

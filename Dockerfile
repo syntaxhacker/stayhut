@@ -16,7 +16,6 @@ FROM cdependencies AS cbuild
 WORKDIR /home/app/client/
 COPY client/ /home/app/client/
 RUN npm run build
-RUN ls -la
 
 #stage-2
 FROM node:12 AS sbase
