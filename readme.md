@@ -13,7 +13,7 @@ Quick install from dockerhub
 
 
 ```docker 
-docker run -pd 3000:3000 --env-file your-env-file syntaxhacker/stayhut:latest
+docker run -pd 9000:9000 --env-file path_to_env_file syntaxhacker/stayhut:latest
 ```
 
 
